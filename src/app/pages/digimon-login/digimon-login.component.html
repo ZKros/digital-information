@@ -1,0 +1,18 @@
+<h1 class="d-flex justify-content-center mb-5">Digimons</h1>
+<form [formGroup]="form" class="d-flex justify-content-center">
+	<div class="col-4">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8qHCREFP4Izn-YmVeAq97CImC4CPmPPOM_w&usqp=CAU"
+			alt="beautiful Eye">
+	</div>
+	<div class="form-group col-4">
+
+		<label>Login:</label>
+		<input class="form-control" formControlName="login" placeholder="Login" required minlength="4">
+
+		<label>Password:</label>
+		<input class="form-control" formControlName="password" placeholder="Password" required minlength="8">
+
+		<button class="btn btn-success mt-2" type="submit" [disabled]="form.invalid">Sign in</button>
+
+	</div>
+</form>

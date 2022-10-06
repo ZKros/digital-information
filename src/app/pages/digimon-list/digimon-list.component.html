@@ -1,0 +1,23 @@
+<h1 class="d-flex justify-content-center mb-4">Digimon Playground</h1>
+<digimon-search (search)="search($event)"></digimon-search>
+<div class="digimon-list">
+	<ng-template ngFor let-digimon [ngForOf]="service.allDigimonsSearch">
+		<div>
+			<div class="digimon-card">
+
+				<div class="digimon-name">
+					{{ digimon['name'] }}
+				</div>
+
+				<div class="digimon-img">
+					<img [src]="digimon['img']" alt="Imagem dos Digimons">
+				</div>
+
+				<div class="digimon-level">
+					{{ digimon['level'] }}
+				</div>
+
+			</div>
+		</div>
+	</ng-template>
+</div>

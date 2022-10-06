@@ -1,0 +1,19 @@
+.digimon-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.digimon-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+	padding: 15px;
+	border-style: double;
+}
+
+img {
+	width: 175px
+}

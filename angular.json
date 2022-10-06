@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"angular-forms-example": {
+		"digital-information": {
 			"projectType": "application",
 			"schematics": {},
 			"root": "",
@@ -13,7 +13,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/angular-forms-example",
+						"outputPath": "dist/digital-information",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -24,7 +24,7 @@
 						],
 						"styles": [
 							"src/styles.css",
-							"../angular-forms-example/node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"../digital-information/node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
 						"scripts": []
 					},
@@ -65,10 +65,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "angular-forms-example:build:production"
+							"browserTarget": "digital-information:build:production"
 						},
 						"development": {
-							"browserTarget": "angular-forms-example:build:development"
+							"browserTarget": "digital-information:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -76,7 +76,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "angular-forms-example:build"
+						"browserTarget": "digital-information:build"
 					}
 				},
 				"test": {
@@ -92,7 +92,7 @@
 						],
 						"styles": [
 							"src/styles.css",
-							"../angular-forms-example/node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"../digital-information/node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
 						"scripts": []
 					}
